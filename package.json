@@ -13,10 +13,11 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1",
+    "@glidejs/glide": "^3.6.0",
     "@reach/accordion": "^0.16.1",
     "@redq/reuse-modal": "2.0.0",
     "@styled-system/theme-get": "^5.1.2",
+    "@superprops/next": "file:",
     "animate.css": "^4.1.1",
     "firebase-admin": "^9.6.0",
     "firebase-functions": "^3.13.2",
