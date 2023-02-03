@@ -3,7 +3,6 @@ import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { SERVICE_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import React from 'react';
 import ServicesArea, { Col, Row } from './services.style';
 const Services = () => {
@@ -15,7 +14,7 @@ const Services = () => {
             <Col key={`service-post-key-${index}`}>
               <Box className="servicePost">
                 <div className='service-icon' style={{"--width": `${icon?.width}px`}}>
-                  <Image src={icon} alt="" />
+                  <img src={icon} alt="" />
                 </div>
                 <Box className="content">
                   <Heading as="h3" content={title} />

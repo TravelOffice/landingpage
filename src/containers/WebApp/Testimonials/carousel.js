@@ -3,7 +3,6 @@ import '@glidejs/glide/dist/css/glide.core.min.css';
 import testimonialsQuote from 'common/assets/image/webApp/testimonials-qoute-1-1.svg';
 import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
-import Image from 'next/image';
 import React, { useEffect } from 'react';
 const Carousel = ({ data }) => {
   useEffect(() => {
@@ -24,7 +23,7 @@ const Carousel = ({ data }) => {
               <li className="glide__slide" key={`glide__slide--key${index}`}>
                 <div className="testimonial_card">
                   <div className="testimonials_content">
-                    <Image
+                    <img
                       className="qouteImage"
                       src={testimonialsQuote}
                       alt="testimonials image"
@@ -46,7 +45,7 @@ const Carousel = ({ data }) => {
             data-glide-dir={`=${index}`}
             key={`glide_bullet--key${index}`}
           >
-            <Image src={image} alt={name} />
+            <img src={image} alt={name} />
             <div className="content">
               <Heading as="h3" content={name} />
               <Text as="span" content={designation} />

@@ -3,7 +3,6 @@ import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { BANNER_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Icon } from 'react-icons-kit';
@@ -31,7 +30,7 @@ const Banner = () => {
       </Container>
       <Box className="bannerImage">
         {image.map(({ src }, index) => (
-          <Image src={src} alt="" key={`banner-image-key-${index}`} />
+          <img src={src} alt="" key={`banner-image-key-${index}`} />
         ))}
       </Box>
     </BannerArea>

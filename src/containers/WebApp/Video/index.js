@@ -8,7 +8,6 @@ import Button from 'common/components/Button';
 import Heading from 'common/components/Heading';
 import Container from 'common/components/UI/Container';
 import { VIDEO_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import React from 'react';
 import VideoArea, { VideoWrapper } from './video.style';
 // close button for modal
@@ -57,19 +56,19 @@ const Video = () => {
         <Heading as="h2" content={VIDEO_DATA?.title} />
         <Box className="videoBox">
           <div className='videoShape-1 videoShape'>
-            <Image src={videoShape1} alt="" />
+            <img src={videoShape1} alt="" />
           </div>
           <div className='videoShape-2 videoShape'>
-            <Image src={videoShape2} alt="" />
+            <img src={videoShape2} alt="" />
           </div>
           <div className='videoShape-3 videoShape'>
-            <Image src={videoShape3} alt="" />
+            <img src={videoShape3} alt="" />
           </div>
           <div className='video-play-button-wrapper'>
             <Button
               className="videoBtn"
               onClick={handleVideoModal}
-              icon={<Image src={videoBtn} alt="" />}
+              icon={<img src={videoBtn} alt="" />}
               iconPosition="left"
               title=""
             />

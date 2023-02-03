@@ -3,7 +3,6 @@ import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { BLOG_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Icon } from 'react-icons-kit';
@@ -48,7 +47,7 @@ const Blog = () => {
               <Box as="div">
                 <Box className="blogPost">
                   <Box className="blogImage">
-                    <Image src={image} alt="blog image" />
+                    <img src={image} alt="blog image" />
                   </Box>
                   <Box className="blogContent">
                     <Heading as="h3" content={title} />

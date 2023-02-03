@@ -2,7 +2,6 @@ import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { FOOTER_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import FooterArea from './footer.style';
@@ -15,7 +14,7 @@ const Footer = () => {
         <Box className="logoBox">
           <Link href="/webapp">
             <a className="logo">
-              <Image src={logo} alt="logo footer" />
+              <img src={logo} alt="logo footer" />
             </a>
           </Link>
           <Text as="p" content={`Copyright © ${new Date().getFullYear()}`} />
@@ -35,7 +34,7 @@ const Footer = () => {
           {social.map(({ icon, link }, index) => (
             <Link href={link} key={`footer-social-link-${index}`}>
               <a className="socialLink">
-                <Image src={icon} alt="social icon" />
+                <img src={icon} alt="social icon" />
               </a>
             </Link>
           ))}

@@ -3,7 +3,6 @@ import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { SECURE_DASHBOARD_DATA } from 'common/data/WebApp';
-import Image from 'next/image';
 import React, { useState } from 'react';
 import SecureDashboardArea, { Col, Row } from './secureDashboard.style';
 const SecureDashboard = () => {
@@ -24,10 +23,10 @@ const SecureDashboard = () => {
         <Row>
           <Col className="image">
             {'tab-1' === tab.toggle ? (
-              <Image src={sectionImage} alt="" className="sectionImage" />
+              <img src={sectionImage} alt="" className="sectionImage" />
             ) : null}
             {'tab-2' === tab.toggle ? (
-              <Image src={sectionImage} alt="" className="sectionImage" />
+              <img src={sectionImage} alt="" className="sectionImage" />
             ) : null}
           </Col>
           <Col className="content">
@@ -45,7 +44,7 @@ const SecureDashboard = () => {
                   key={`post-key-${index}`}
                 >
                   <Box className="image">
-                    <Image src={icon} alt="" />
+                    <img src={icon} alt="" />
                   </Box>
                   <Box className="postContent">
                     <Heading as="h3" content={title} />
